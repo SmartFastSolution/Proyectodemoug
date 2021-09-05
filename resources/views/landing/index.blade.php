@@ -32,7 +32,7 @@
               
               @endrole
               @role('operador')
-              <li><a href="{{ route('operador.index') }}">Operador</a></li>
+              <li><a href="{{ route('coordinador.index') }}">Operador</a></li>
               @endrole
                 <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" >Cerrar Sesion</a>
                   <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

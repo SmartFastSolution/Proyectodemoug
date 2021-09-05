@@ -57329,9 +57329,9 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\laragon\www\ProyectoDemo\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! C:\laragon\www\ProyectoDemo\resources\sass\app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! C:\laragon\www\ProyectoDemo\resources\sass\landing.scss */"./resources/sass/landing.scss");
+__webpack_require__(/*! C:\laragon\www\Proyectodemoug\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\laragon\www\Proyectodemoug\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! C:\laragon\www\Proyectodemoug\resources\sass\landing.scss */"./resources/sass/landing.scss");
 
 
 /***/ })

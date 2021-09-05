@@ -25,6 +25,8 @@ class UserSeeder extends Seeder
        
         $role3 = Role::create(['name' => 'super-admin']);
 
+        $role4 = Role::create(['name' => 'operador']);
+
         
         DB::table('users')->insert([
          
@@ -34,7 +36,7 @@ class UserSeeder extends Seeder
              'domicilio'       => 'Guayaqyil',
              'telefono'        => '098765432',
              'celular'         => '049876543',
-             'email'           => 'admin@sfs.com',
+             'email'           => 'admin@sanfelipe.com',
              'password'        => Hash::make('12345678'),
              'estado'          => 'on',
              'created_at'      => now(),
@@ -47,12 +49,12 @@ class UserSeeder extends Seeder
             DB::table('users')->insert([
          
              'cedula'          => '0987654321',
-             'username'         =>'cordinador',
-             'nombres'         =>'Cordinador',
+             'username'         =>'coordinador',
+             'nombres'         =>'Coordinador',
              'domicilio'       => 'Guayaqyil',
              'telefono'        => '098765432',
              'celular'         => '049876543',
-             'email'           => 'coord1@sfs.com',
+             'email'           => 'coord1@sanfelipe.com',
              'password'        => Hash::make('12345678'),
              'estado'          => 'on',
              'created_at'      => now(),

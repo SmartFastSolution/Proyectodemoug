@@ -88,7 +88,7 @@
                 <div class="sidebar-brand">
                   <a href="{{ route('index') }}">
                     <img alt="image" src="{{ asset('img/ug.png') }}" class="header-logo">
-                    <span class="logo-name">INIAP</span>
+                    <span class="logo-name">SAN FELIPE</span>
                   </a>
                 </div>
                 <div class="sidebar-user">

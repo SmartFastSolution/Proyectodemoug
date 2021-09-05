@@ -37388,7 +37388,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\laragon\www\ProyectoDemo\resources\js\landing.js */"./resources/js/landing.js");
+module.exports = __webpack_require__(/*! C:\laragon\www\Proyectodemoug\resources\js\landing.js */"./resources/js/landing.js");
 
 
 /***/ })

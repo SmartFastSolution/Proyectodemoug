@@ -14,8 +14,8 @@ class SectorSeeder extends Seeder
      */
     public function run()
     {
-         $sectors = array('La Chala', 'Las Malvinas', 'La Atarazana',' Mucho Lote','Orquideaz', 'Ceibos');
-         $tipos = array('Pago de Agua', 'Pago de Luz', 'Arriendo', 'Recargas', 'Consumo', 'Reportes');
+         $sectors = array('SECTOR 1', 'SECTOR 2', 'SECTOR 3','SECTOR 4','SECTOR 5', 'SECTOR 6');
+         $tipos = array('Chilo Supressalis', 'Rosquillas', 'Pudenta', 'Piricularia', 'Malas hierbas', 'Agallador');
        
          foreach ($sectors as $sector) {
            DB::table('sectors')->insert([

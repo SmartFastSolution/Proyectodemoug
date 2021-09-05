@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="">
         <meta name="description" content="">
-        <title>Centro de Control INIAP</title>
+        <title>SAN FELIPE</title>
         
         <!-- Loading Bootstrap -->
         <link href="{{ asset('landing/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -33,7 +33,10 @@
                     <!--begin navbar -->
                     <nav class="navbar navbar-expand-lg">
                         <!--begin logo -->
-                        <a class="navbar-brand" href="/login">INIAP</a>
+                        <a class="navbar-brand" href="/login">SAN FELIPE</a>
+                        <div class="col-md-6 margin-top-10">
+                            <img src="{{ asset('img/logosanfelipe.png') }}" class="width-5" alt="Happy">
+                        </div>
                         <!--end logo -->
                         <!--begin navbar-toggler -->
                         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,11 +68,10 @@
                             <li><a href="{{ route('admin.index') }}">Administrador</a></li>
                             @endrole
                             @role('coordinador')
-                            <li><a href="{{ route('coordinador.index') }}">Coordinador</a></li>
-                            
+                            <li><a href="{{ route('coordinador.index') }}">Coordinador</a></li>                            
                             @endrole
                             @role('operador')
-                            <li><a href="{{ route('operador.index') }}">Operador</a></li>
+                            <li><a href="{{ route('coordinador.index') }}">Operador</a></li>
                             @endrole
                             <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" >Cerrar Sesión</a>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -107,8 +109,9 @@
                 <div class="row">
                     <!--begin col-md-12-->
                     <div class="col-md-12 text-center padding-bottom-10">
-                        <h2 class="section-title">Estación Experimental Litoral Sur</h2>
-                        <p class="section-subtitle">El Instituto Nacional de Investigaciones Agropecuarias (INIAP), es una entidad adscrita al ministerio rector de la política agraria, cuyos fines primordiales son: impulsar la investigación científica, la generación, innovación, validación, y difusión de tecnologías en el sector agropecuario y de producción forestal, en el ámbito de sus competencias.</p>
+                        <h2 class="section-title">PILADORA</h2>
+                        <h1 class="section-title">S A N   F E L I P E</h1>
+                        <p class="section-subtitle">Es una empresa líder en la costa desde el corazón del Guayas, que se dedica a la elaboración, producción, procesamiento y empacadora de arroz en general toda clase de derivados y de cualquier otro producto que sea susceptible en el mercado de esta actividad. Entregando un producto con un excelente control de calidad a todos nuestros clientes.</p>
                     </div>
                     <!--end col-md-12 -->
                 </div>
@@ -118,9 +121,9 @@
                     <!--begin col-md-3 -->
                     <div class="col-md-3">
                         <div class="main-services">
-                            <i class="pe-7s-science"></i>
-                            <h4>Biotecnología</h4>
-                            <p>Servicios de cultivo de tejidos y biología molecular para responder a la demanda de producción de semillas meristemática.</p>
+                            <i class="pe-7s-link"></i>
+                            <h4>Visión</h4>
+                            <p>Ser una empresa con presencia, sólida y competitiva, en el mercado nacional.</p>
                             
                         </div>
                     </div>
@@ -130,7 +133,7 @@
                         <div class="main-services">
                             <i class="pe-7s-medal"></i>
                             <h4>Producción</h4>
-                            <p>Las semillas que se producen en cada una de las Estaciones Experimentales son de plantas de clones seleccionados.</p>
+                            <p>Producir, procesar y distribuir arroz y sus derivados de alta calidad.</p>
                             
                         </div>
                     </div>
@@ -139,8 +142,8 @@
                     <div class="col-md-3">
                         <div class="main-services">
                             <i class="pe-7s-shield"></i>
-                            <h4>Protección Vegetal</h4>
-                            <p>Tiene como objetivo principal la sanidad de los cultivos a través de la investigación e innovación ecológica.</p>
+                            <h4>Protección Ecológica</h4>
+                            <p>Tiene como objetivo principal la sanidad del medio ambiente, la seguridad e innovación ecológica.</p>
                             
                         </div>
                     </div>
@@ -151,7 +154,7 @@
                         <div class="main-services">
                             <i class="pe-7s-display1"></i>
                             <h4>Planificación</h4>
-                            <p>El Departamento ejecuta actividades en tres ámbitos: Planificación, Economía Agrícola y Convenios.</p>
+                            <p>Comprometidos con el cumplimiento de los lineamientos de las Buenas Prácticas de Manufactura.</p>
                             
                         </div>
                     </div>
@@ -176,7 +179,7 @@
                 
                 <!--begin col-md-6-->
                 <div class="col-md-6 margin-top-10">
-                    <img src="{{ asset('img/iniap_arroz.jpg') }}" class="width-100" alt="Happy">
+                    <img src="{{ asset('img/sanfelipe_arroz.jpg') }}" class="width-100" alt="Happy">
                 </div>
                 <!--end col-sm-6-->
                 
@@ -184,21 +187,20 @@
                 <div class="col-md-6 margin-top-10">
                     <!--begin small-column-inside-->
                     <div class="small-col-inside">
-                        <h3>Instituto Nacional de Investigaciones Agropecuarias sobre los servicios</h3>
-                        <p>El INIAP trabaja en el desarrollo de nuevas tecnologías, además de ofertar las herramientas para la implementación de nuevas tecnologías en el manejo integrado del cultivo de arroz.</p>
+                        <h3>Piladora San Felipe sobre los servicios</h3>
+                        <p>El SAN FELIPE trabaja en el desarrollo de nuevas tecnologías, además de ofertar las herramientas para la implementación de nuevas tecnologías en el manejo integrado del cultivo de arroz.</p>
                         
                         <ul class="benefits">
-                            <li><i class="fas fa-check"></i> Servicios de laboratorio.</li>
-                            <li><i class="fas fa-check"></i> Producción de semillas y material vegetal.</li>
-                            <li><i class="fas fa-check"></i> Servicios especializados.</li>
-                            <li><i class="fas fa-check"></i> Programas y Departamentos.</li>
+                            <li><i class="fas fa-check"></i> Elaboración de planificación</li>
+                            <li><i class="fas fa-check"></i> Producción de arroz</li>
+                            <li><i class="fas fa-check"></i> Procesamiento del arroz</li>
+                            <li><i class="fas fa-check"></i> Empacadora masiva de los producto</li>
                             
                         </ul>
                         <!--begin row-->
                         
-                        <!--end row-->
+                        <!--end row-->                       
                         
-                        <a href="{{ asset('img/PEIINIAP2018-2022.pdf') }}" target="_blank"class="btn-dashed small scrool">Rendición de cuentas 2020</a>
                     </div>
                     <!--end small-column-inside-->
                 </div>
@@ -330,10 +332,10 @@
                 <!--begin col-md-6 -->
                 <div class="col-md-6">
                     <h4>Ubícanos en :</h4>
-                    <iframe class="contact-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d996.6854278631436!2d-79.64392457086089!3d-2.2502207598265795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d44a3f45f2efd%3A0x475f35264b0bd875!2sEstacion%20Experimental%20Litoral%20Sur%20%22Dr%20Enrique%20Ampuero%22%20-%20INIAP!5e0!3m2!1ses!2sec!4v1621152313420!5m2!1ses!2sec" width="600" height="250" style="border:0" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5204.151727277384!2d-79.98438776008287!3d-1.885038173879011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d04757a689c87%3A0x31897b18274bb326!2sPiladora%20San%20Felipe!5e0!3m2!1ses!2sec!4v1630812718872!5m2!1ses!2sec" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     <h6>Contactos</h6>
                     <p class="contact-details"><i class="fas fa-map-marker-alt"></i>Km 26 Vía Durán-Tambo, al Oeste de Guayaquil, Cantón Yaguachi, Guayas</p>
-                    <p class="contact-details"><i class="fas fa-envelope"></i> <a href="mailto:litoralsur@iniap.gob.ec">litoralsur@iniap.gob.ec</a></p>
+                    <p class="contact-details"><i class="fas fa-envelope"></i> <a href="mailto:litoralsur@SAN FELIPE.gob.ec">litoralsur@SAN FELIPE.gob.ec</a></p>
                     <p class="contact-details"><i class="fa fa-phone"></i>593 4 2724-260 / 593 4 2724-261 / 593 4 2724-262</p>
                 </div>
                 <!--end col-md-6 -->
@@ -358,7 +360,7 @@
                 <!--begin col-md-12 -->
                 <div class="col-md-12 text-center">
                     
-                    <p>Copyright © 2021 <span class="template-name">INIAP</span>. Designed by <a href="http://www.ug.edu.ec" target="_blank">Universidad de Guayaquil</a></p>
+                    <p>Copyright © 2021 <span class="template-name">SAN FELIPE</span>. Designed by <a href="http://www.ug.edu.ec" target="_blank">Universidad de Guayaquil</a></p>
                     
                 </div>
                 <!--end col-md-12 -->
